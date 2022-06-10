@@ -1,16 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 #navbar {
   position: fixed;
   top: 0;
   left: 0;
+  background: rgb(241, 94, 94);
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#navbar > ul > li {
+  display: inline-block;
+  padding-right: 1rem;
+  padding: 1.5rem 0.5rem;
+}
+
+#navbar > ul > li > a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 #welcome-section {
   height: 100vh;
   width: 100vw;
+  background: rgb(41, 40, 40);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome-section > h1 {
+  color: white;
+  font-size: 3rem;
+}
+#welcome-section > h3 {
+  color: rgb(241, 94, 94);
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+#projects {
+  padding-top: 4rem;
+  background: rgb(78, 180, 214);
+  text-align: center;
+}
+
+#projects h1 {
+  font-size: 3rem;
+  color: white;
 }
 
 @media (max-width: 600px) {
- #navbar {
+  /* #navbar {
   display: none;
- }
+ } */
 }
